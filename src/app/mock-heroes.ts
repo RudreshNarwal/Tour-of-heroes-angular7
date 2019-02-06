@@ -1,7 +1,7 @@
 import { Hero } from './hero';
 
 // defining HEROES constant as an array of ten hero and exporting it.
-export const HEROES: Hero[] = [  // Hero is from the imported file 
+export const HEROES: Hero[] = [  // Hero is from the import file 
   { id: 11, name: 'Mr. Nice' },
   { id: 12, name: 'Narco' },
   { id: 13, name: 'Bombasto' },
