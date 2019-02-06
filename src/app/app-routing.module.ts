@@ -5,6 +5,7 @@ const routes: Routes = [];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  // Exporting RouterModule makes router directives available for use in the AppModule components that will need them.
+  exports: [RouterModule] 
 })
 export class AppRoutingModule { }
