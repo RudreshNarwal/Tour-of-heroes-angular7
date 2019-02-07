@@ -10,7 +10,7 @@ import { HeroService } from '../hero.service';
 export class HeroesComponent implements OnInit {
   
   // Click event binding
-  selectedHero: Hero;
+  //selectedHero: Hero;
   heroes: Hero[];
   
   //heroes = HEROES; // here heroes is object name and HEROES is TS file that we have imported 
@@ -33,9 +33,9 @@ export class HeroesComponent implements OnInit {
     this.getHeroes();
   }
   
-    onSelect(hero: Hero): void {
-      this.selectedHero = hero;
-    }
+    // onSelect(hero: Hero): void {
+    //   this.selectedHero = hero;
+    // }
 
     /*The new version waits for the Observable to emit the array of heroes— which could happen now or several minutes from
      now. Then subscribe passes the emitted array to the callback, which sets the component's heroes property.

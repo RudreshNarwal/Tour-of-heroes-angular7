@@ -2,15 +2,15 @@
 <!--Heroes List -->
 <ul class="heroes">
      <!-- hero holds the current hero object for each iteration through the list. -->
-  <li *ngFor="let hero of heroes"   
-    [class.selected]="hero === selectedHero"
-    (click)="onSelect(hero)">
-    <span class="badge">{{hero.id}}</span> {{hero.name}}
-  </li>
+     <li *ngFor="let hero of heroes">
+        <a routerLink="/detail/{{hero.id}}">
+          <span class="badge">{{hero.id}}</span> {{hero.name}}
+        </a>
+      </li>
 </ul>
-
+<!--
 <app-hero-detail [hero]="selectedHero"></app-hero-detail>
-
+-->
 <!-- <div *ngIf="selectedHero"> -->
     <!--Hero Detail-->
   <!-- <h2>{{selectedHero.name | uppercase}} Details</h2>
